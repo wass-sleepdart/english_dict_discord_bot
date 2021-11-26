@@ -6,7 +6,7 @@ def get_definition(word):
 
     headers = {
         'x-rapidapi-host': "wordsapiv1.p.rapidapi.com",
-        'x-rapidapi-key': "c28d3912b5msh098dac9629c9e1bp10f86bjsnf509f72d9bb1"
+        'x-rapidapi-key': ""#get you own api key
         }
     response = requests.request("GET", url, headers=headers,)
     json_to_dict=json.loads(response.text)
